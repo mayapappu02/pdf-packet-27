@@ -22,8 +22,6 @@ interface AdminPanelProps {
 }
 
 const ADMIN_EMAIL = 'admin@example.com'
-// keep ADMIN_PASSWORD only if you want to seed server-side (not used here)
-const ADMIN_PASSWORD = 'admin123'
 
 export default function AdminPanel({ onClose }: AdminPanelProps) {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => authService.isAuthenticated())
